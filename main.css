@@ -1,0 +1,63 @@
+h1{
+  color : white;
+  text-align :center;
+  font-family: sans-serif;
+  font-size:300%;
+  font-style: italic;
+  }
+  /*encabezado*/
+h2{
+  color : white;
+  text-align :center;
+  }
+*{
+  text-align :center;
+  }
+p{ /*parrafo*/
+  color : white ;
+  text-align :center;
+  font-family: sans-serif;
+  font-size:250%; /*tamaño de fuente*/
+  font-style: normal;
+
+ }
+
+html {
+  height:100%;
+  width:100%;
+}
+
+body{
+  text-align:center;
+  background-image:url(pizarra2.png);
+  background-size:100% 100%;
+}
+input{ /*cuadrito*/
+  background-color: white;
+  border: 2px solid #02330d; ;
+}
+.button /**/ {
+text-decoration: none;
+padding: 10px;
+font-weight: 600;
+font-size: 20px;
+color: #ffffff;
+background-color: #38d312;
+border-radius: 6px;
+border: 2px solid #02330d;
+}
+.button:hover /**/{
+color: #1883ba;
+background-color: #ffffff;
+}
+.tabla{
+  width:100%
+}
+ #volverJugarMate, #volverJugarOrtografia, #buttonOrtQuestion3, #buttonOrtQuestion2, #buttonOrtQuestion1, #buttonMathQuestion3, #buttonMathQuestion2, #buttonMathQuestion1, #buttonMathsOrthography{
+  display: none
+}
+#botonesVolver{
+  width: 33.33%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

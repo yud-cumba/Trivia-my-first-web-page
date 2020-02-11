@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Trivia de conocimientos</title>
+        <link rel="stylesheet" href="main.css"> <!--enlace con css-->
+  </head>
+  <body>
+        <h1 id="welcome"> <br>¡ Bienvenidx a <br>nuestra trivia de conocimientos !</h1>
+  	    <div id="login">
+           <p> Escribe tu nombre <br> </p>
+	          <input type ='text' id="userName"><br><br>
+	          <button id="sendName" class="button" onclick="ButtonGo()">Empezar</button>
+        </div> <!--esto nos manda a la funcion boton en JS y pone el texto "Empezar"en el boton-->
+		    <p id="space"></p>
+	      <br>
+            <!--botones ESCOGER MATE U ORTOGRAFIA -->
+	      <div id="buttonMathsOrthography" > <!-- crea boton en oculto-->
+	        <table class="tabla" >
+            <tr>    <!-- crea fila -->
+             <td> <!-- crea columna -->
+              <div id='maths'>
+               <br>Matemáticas<br>
+               <button id="buttonMath"  class="button" onclick="buttonMath()" >Jugar</button>
+              </div>
+             </td> <!-- cierra columna -->
+             <td>  <!-- crea columna -->
+              <div id='orthography' >
+                 <br>Ortografía<br>
+                 <button id="buttonOrthography" class="button" onclick="buttonOrthography()" >Jugar</button>
+              </div>
+             </td> <!-- cierra columna -->
+            </tr> <!-- cierra fila -->
+          </table>
+        </div>
+            <!--BOTONES MATEMATEMATICA PREGUNTA 1-->
+        <div id="buttonMathQuestion1">
+	        <table class="tabla" >
+            <tr>    <!-- crea fila -->
+               <!--boton 1-->
+             <td> <!-- crea columna -->
+              <button id="buttonMath1Op1"  class="button" onclick="buttonMath1Op1()" >24</button>
+             </td> <!-- cierra columna -->
+               <!--boton 2-->
+             <td>  <!-- crea columna -->
+              <button id="buttonMath1Op2" class="button" onclick="buttonMath1Op2()" >14</button>
+             </td> <!-- cierra columna -->
+               <!--boton 3-->
+             <td>  <!-- crea columna -->
+              <button id="buttonMath1Op3" class="button" onclick="buttonMath1Op3()" >-30</button>
+             </td> <!-- cierra columna -->
+            </tr> <!-- cierra fila -->
+          </table>
+        </div>
+            <!--FIN BOTONES MP1-->
+            <!--BOTONES MATEMATICA PREGUNTA 2-->
+        <div id="buttonMathQuestion2" style="display:none">
+	        <table class="tabla" >
+            <tr>    <!-- crea fila -->
+              <!--boton 1-->
+             <td> <!-- crea columna -->
+              <button id="buttonMath2Op1"  class="button" onclick="buttonMath2Op1()" >1/7</button>
+             </td> <!-- cierra columna -->
+              <!--boton 2-->
+             <td>  <!-- crea columna -->
+              <button id="buttonMath2Op2" class="button" onclick="buttonMath2Op2()" >1/12</button>
+               <!--boton Listo M2-->
+             </td> <!-- cierra columna -->
+               <!--boton 3-->
+             <td >  <!-- crea columna -->
+              <button id="buttonMath2Op3" class="button" onclick="buttonMath2Op3()" >3/4</button>
+             </td> <!-- cierra columna -->
+            </tr > <!-- cierra fila -->
+          </table>
+        </div>
+           <!--FIN BOTONES MP3-->
+           <!--BOTONES MATEMATEMATICA PREGUNTA 2-->
+        <div id="buttonMathQuestion3" >
+	        <table class="tabla" >
+            <tr>    <!-- crea fila -->
+               <!--boton 1-->
+             <td> <!-- crea columna -->
+               <button id="buttonMath3Op1"  class="button" onclick="buttonMath3Op1()" >40</button>
+             </td> <!-- cierra columna -->
+               <!--boton 2-->
+             <td>  <!-- crea columna -->
+               <button id="buttonMath3Op2" class="button" onclick="buttonMath3Op2()" >90</button>
+               <!--boton Listo M2-->
+             </td> <!-- cierra columna -->
+               <!--boton 3-->
+             <td>  <!-- crea columna -->
+               <button id="buttonMath3Op3" class="button" onclick="buttonMath3Op3()" >60</button>
+             </td> <!-- cierra columna -->
+            </tr> <!-- cierra fila -->
+          </table>
+        </div>
+            <!--FIN BOTONES MP3-->
+            <!--************ Botones de Ortografía********-->
+            <!--botones de ortografía pregunta 1-->
+           <br>
+        <div id='buttonOrtQuestion1'>
+          <table class="tabla">
+            <tr> <!-- fila-->
+             <td>
+               <button id='sendOrtographyQuestion1Option1' class='button' onclick ='buttonOrtographyQuestion1Option1()'>Ay</button>
+             </td>
+             <td>
+               <button id='sendOrtographyQuestion1Option2' class='button' onclick='buttonOrtographyQuestion1Option2()'>Ahi</button>
+             </td>
+             <td>
+               <button id='sendOrtographyQuestion1Option3' class='button' onclick='buttonOrtographyQuestion1Option3()'>Hay</button>
+             </td>
+            </tr>
+          </table>
+        </div>
+            <!--boton para la pregunta 2 de ortografía-->
+        <div id='buttonOrtQuestion2'>
+          <table class="tabla">
+            <tr> <!-- fila-->
+             <td>
+               <button id='sendOrtographyQuestion2Option1' class='button' onclick ='buttonOrtographyQuestion2Option1()'>eh</button>
+             </td>
+             <td>
+               <button id='sendOrtographyQuestion2Option2' class='button' onclick='buttonOrtographyQuestion2Option2()'>he</button>
+             </td>
+             <td>
+               <button id='sendOrtographyQuestion2Option3' class='button' onclick='buttonOrtographyQuestion2Option3()'>e</button>
+             </td>
+            </tr>
+          </table>
+        </div>
+           <!-- boton de la pregunta 3 de ortografía-->
+        <div id='buttonOrtQuestion3'>
+          <table class="tabla">
+            <tr> <!-- fila-->
+              <td>
+                 <button id='sendOrtographyQuestion3Option1' class='button' onclick ='buttonOrtographyQuestion3Option1()'>aya</button>
+              </td>
+              <td>
+                 <button id='sendOrtographyQuestion3Option2' class='button' onclick='buttonOrtographyQuestion3Option2()'>halla</button>
+              </td>
+              <td>
+                 <button id='sendOrtographyQuestion3Option3' class='button' onclick='buttonOrtographyQuestion3Option3()'>haya</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+           <!--Volver a jugar-->
+        <div id="botonesVolver">
+           <button id='volverJugarMate' class='button' onclick="buttonMath()">Volver a jugar matemática</button>
+           <button id='volverJugarOrtografia' class='button' onclick="buttonOrthography()" >Volver a jugar ortografía</button>
+        </div>
+            <!-- fin botones volver a jugar-->
+            <!--imagen-->
+            <p>
+            <img src="logolaboratoria.png">
+            </p>
+     <script type="text/javascript" src='app.js'></script>
+  </body>
+</html>
